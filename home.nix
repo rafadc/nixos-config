@@ -67,6 +67,7 @@ in
     pkgsUnstable.gitui
     pkgsUnstable.grc
     pkgsUnstable.file
+    pkgsUnstable.unzip
 
     pkgs.fishPlugins.done
     pkgs.fishPlugins.fzf-fish
