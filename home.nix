@@ -68,6 +68,7 @@ in
     pkgsUnstable.grc
     pkgsUnstable.file
     pkgsUnstable.unzip
+    pkgsUnstable.entr
 
     pkgs.fishPlugins.done
     pkgs.fishPlugins.fzf-fish
@@ -76,12 +77,21 @@ in
 
     pkgs.python311
 
+    pkgs.zlib
+    pkgsUnstable.openssl
+
     pkgsUnstable.rofi
     pkgsUnstable.rofimoji
 
     pkgsUnstable.catppuccin-gtk
     pkgsUnstable.gnomeExtensions.user-themes
     pkgsUnstable.gnomeExtensions.paperwm
+    pkgsUnstable.gnomeExtensions.appindicator
+
+    pkgs.libappindicator-gtk3 # Overgrive requirement
+    pkgs.libayatana-appindicator
+    pkgs.libnotify
+    pkgs.python311Packages.oauth2client
 
     pkgs.speechd
     pkgs.firefox
@@ -91,11 +101,18 @@ in
     pkgs.gimp
     pkgs.thunderbird
     pkgs.freefilesync
+    pkgs.cobang
 
     pkgsUnstable.kitty
 
+    pkgsUnstable.docker
+    pkgsUnstable.kind
+    pkgsUnstable.kubectl
+    pkgsUnstable.k9s
+
     pkgsUnstable.asdf-vm
     pkgsUnstable.jetbrains-toolbox
+    pkgsUnstable.plantuml
     
     pkgsUnstable.neovim
     pkgsUnstable.tree-sitter
@@ -122,6 +139,7 @@ in
     enable = true;
     interactiveShellInit = ''
       set fish_greeting # Disable greeting
+      source /home/rafadc/.nix-profile/share/asdf-vm/asdf.fish
     '';
 
     plugins = [
