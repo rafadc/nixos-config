@@ -69,6 +69,7 @@ in
     pkgsUnstable.file
     pkgsUnstable.unzip
     pkgsUnstable.entr
+    pkgsUnstable.xclip
 
     pkgs.fishPlugins.done
     pkgs.fishPlugins.fzf-fish
